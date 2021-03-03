@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+	{% for l in t %}
+		<li><a href="#{{l}}">{{l}}</a></li>
+	{% endfor %}
+	<table style="width:100%">
+	  <tr>
+	    <th>User</th>
+	    <th>Following</th>
+	    <th>Time</th>
+	  
+
+	{% for l in t %}
+	  	
+	  <tr>
+	  	
+	    <td><section id={{l}}>{{l}}</section></td>
+	    
+	    
+	  </tr>
+	  {% for k in t[l] %}  
+	  <tr>
+	  	<td></td>
+	    <td>
+	    	{{k}}
+	    </td>
+	    <td>
+	    	{{t[l][k]}}
+	    </td>
+	    
+	    {% endfor %}
+	  {% endfor %}
+
+	  </tr>
+	</section>
+	   	
+
+	</table> 
+	
+</body>
+
+</html>
+

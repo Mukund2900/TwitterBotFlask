@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/" method="post">
+		ENTER CORRECT USERNAME TO TRACK USER:
+		<input type="text" name="name">
+		<button type = "submit" >submit</button><br>	
+		<div class = "border-top pt-3">
+			
+			TRACK USERS<a class="ml-2" href="{{ url_for('real')}}">   CLICK HERE </a>
+			
+		</div>
+	</form>
+	{% for l in t %}
+		{{l}}
+		<br>
+	{% endfor %}
+
+</body>
+</html>
